@@ -1,0 +1,44 @@
+$animation-dur: .8s;
+
+// @include keyframes-button();
+
+@include keyframes(fade-to-flat) {
+  0% {
+    background-color: $accent-color;
+    box-shadow: 0 .2rem .5rem 0 rgba(0,0,0,.26);
+    color: $white;
+  }
+
+  100% {
+    background-color: $white;
+    box-shadow: none;
+    color: $accent-color;
+  }
+}
+
+.cta {
+	background-color: $accent-color;
+	border-radius: .2rem;
+	box-shadow: 0 .2rem .5rem 0 rgba(0, 0, 0, 0.26);
+	color: $white;
+	display: inline-block;
+	font-family: 'Hind', sans-serif;
+	margin: 2.2rem auto 0 auto;
+	max-width: 12rem;
+	overflow: hidden;
+	padding: 2rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: width $animation-dur ease-in-out, box-shadow .4s ease-out, background-color .3s ease-out;
+  white-space: nowrap;
+
+	&.flat {
+		@include animation('fade-to-flat .8s');
+		animation-fill-mode: forwards;
+	}
+
+	&:hover {
+		background-color: $accent-color-hover;
+		box-shadow: 0 .6rem .7rem 0 rgba(0, 0, 0, 0.26);
+	}
+}

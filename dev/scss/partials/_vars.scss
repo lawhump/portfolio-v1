@@ -1,0 +1,37 @@
+$dark-primary-color	: #455A64;
+$primary-color		  : #607D8B;
+$light-primary-color: #CFD8DC;
+$white 				      : #fff;
+$accent-color		    : #FF5252;
+$accent-color-hover : #E54A4A;
+$primary-text		    : #212121;
+$secondary-text		  : #727272;
+$divider-color		  : #B6B6B6;
+
+$color-illicit: #000;
+$color-nowplaying: #2185C5;
+$color-map: #F7685C;
+$color-meme: #e7c824;
+$color-natalie: #777;
+$color-brewskies: #007949;
+$color-maelstrom: #41D6C3;
+$color-frank: #000;
+$color-mcplanr: #C64747;
+$color-neutral: #f2d81c;
+$color-oldsite: #C2C388;
+
+$scale-factor: .85;
+$mobile-width: 360px * $scale-factor;
+$tablet-width: 1024px * $scale-factor;
+$laptop-width: 1280px * $scale-factor;
+
+$mobile-height: 640px * $scale-factor;
+$tablet-height: 768px * $scale-factor;
+$laptop-height: 720px * $scale-factor;
+
+
+$numProjects: 9;
+
+$animation-curve: cubic-bezier(0.2, 0.2, 0.2, 1);
+
+$max-width: 50rem;

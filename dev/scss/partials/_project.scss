@@ -1,0 +1,105 @@
+.portfolio {
+	overflow: auto;
+	position: relative;
+	width: 55%;
+
+  figure {
+		color: #fff;
+		cursor: pointer;
+    margin: 0;
+		overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-align: center;
+		transition: height .3s ease-out;
+		width: 100%;
+
+    &:before {
+      background-color: rgba(0,0,0,0);
+      content: '';
+      height: 100%;
+      left: 0;
+      pointer-events: none;
+      position: absolute;
+      transition: background-color .3s ease-out;
+      top: 0;
+      width: 100%;
+    }
+
+    &:hover {
+      figcaption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  .illicit:hover:before {
+    background-color: rgba($color-illicit, .9);
+  }
+
+  .nowplaying:hover:before {
+    background-color: rgba($color-nowplaying, .9);
+  }
+
+  .map:hover:before {
+    background-color: rgba($color-map, .9);
+  }
+
+  .meme:hover:before {
+    background-color: rgba($color-meme, .9);
+  }
+
+  .natalie:hover:before {
+    background-color: rgba($color-natalie, .9);
+  }
+
+  .brewskies:hover:before {
+    background-color: rgba($color-brewskies, .9);
+  }
+
+  .maelstrom:hover:before {
+    background-color: rgba($color-maelstrom, .9);
+  }
+
+  .frank:hover:before {
+    background-color: rgba($color-frank, .9);
+  }
+
+  .mcplanr:hover:before {
+    background-color: rgba($color-mcplanr, .9);
+  }
+
+  .neutral:hover:before {
+    background-color: rgba($color-neutral, .9);
+  }
+
+  .oldsite:hover:before {
+    background-color: rgba($color-oldsite, .9);
+  }
+
+  figcaption {
+    left: 50%;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -35%);
+    transition: opacity .3s ease-out, transform .3s ease-out;
+    width: 70%;
+  }
+
+  img {
+    display: block;
+		height: 100%;
+    transition: all .4s ease-out;
+    vertical-align: top;
+		width: 100%;
+  }
+}
+
+@media all and (max-width: 768px) {
+	.portfolio {
+		width: 100%;
+	}
+}

@@ -1,0 +1,110 @@
+.dropdown {
+  // @include shadow(0);
+  box-shadow: 0 6px 12px rgba(0,0,0,0),0 10px 40px rgba(0,0,0,0);
+  cursor: pointer;
+  display: block;
+  left: 50%;
+  margin: 0;
+  margin-top: -1.2rem;
+  max-width: 30rem;
+  padding: 1.2rem 2.4rem;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: box-shadow .25s ease-out;
+  text-align: center;
+  width: 55%;
+  z-index: 10;
+
+  h4 {
+    color: #333;
+  }
+
+  ul {
+    display: none;
+    left: 50%;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+
+  li {
+    background-color: #fff;
+    opacity: 0;
+    padding: 1.2rem 0;
+    width: 100%;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .fa {
+    transition: all .1s;
+  }
+
+  &.hovered {
+    background-color: #fff;
+    @include shadow(3);
+
+    ul {
+      display: block;
+    }
+
+    .fa-angle-down {
+      transform: rotate(-180deg);
+    }
+  }
+
+  [data-project] {
+    &:hover {
+      color: #f5f5f5;
+    }
+  }
+
+  [data-project="illicit"]:hover {
+    background-color: $color-illicit;
+  }
+
+  [data-project="nowplaying"]:hover {
+    background-color: $color-nowplaying;
+  }
+
+  [data-project="map"]:hover {
+    background-color: $color-map;
+  }
+
+  [data-project="meme"]:hover {
+    background-color: $color-meme;
+  }
+
+  [data-project="natalie"]:hover {
+    background-color: $color-natalie;
+  }
+
+  [data-project="brewskies"]:hover {
+    background-color: $color-brewskies;
+  }
+
+  [data-project="maelstrom"]:hover {
+    background-color: $color-maelstrom;
+  }
+
+  [data-project="frank"]:hover {
+    background-color: $color-frank;
+  }
+
+  [data-project="mcplanr"]:hover {
+    background-color: $color-mcplanr;
+  }
+
+  [data-project="neutral"]:hover {
+    background-color: $color-neutral;
+  }
+
+  [data-project="oldsite"]:hover {
+    background-color: $color-oldsite;
+  }
+}

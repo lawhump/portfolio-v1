@@ -1,0 +1,90 @@
+.me {
+	background-color: $white;
+	color: $dark-primary-color;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+	-webkit-justify-content: center;
+	justify-content: center;
+	opacity: 0;
+	text-align: center;
+	transition: opacity .3s ease-out;
+	width: 45%;
+  will-change: opacity;
+
+  > *:not(.cta) {
+    margin: 0 auto;
+    max-width: 60rem;
+    width: 90%;
+  }
+
+	.elevate {
+		padding-top: 7vh;
+	}
+
+	img {
+		border-radius: 50%;
+		height: 20rem;
+		transition: height .3s ease-out, width .3s ease-out;
+		transition-delay: .1s;
+		width: 20rem;
+	}
+
+	.shrink {
+		height: 15rem;
+		width: 15rem;
+	}
+
+	.blurb {
+		margin-top: 1.4rem;
+    opacity: 0;
+		transition: opacity .4s ease-out;
+
+		h2 {
+			margin: 2rem 0 1.2rem 0;
+		}
+
+    &.show {
+      opacity: 1;
+    }
+	}
+
+	a:not(.cta) {
+		color: $accent-color;
+
+		&:not(.link):hover {
+			border-bottom: 1px solid rgba(255, 82, 82, 1);
+		}
+	}
+}
+.interest {
+	cursor: pointer;
+  user-select: none;
+}
+
+.link {
+	text-decoration: none;
+	transition: color .3s ease-out;
+
+	&:hover i{
+		color: $accent-color;
+	}
+}
+
+
+@media all and (max-width: 768px) {
+	.me {
+		margin: 10% 0;
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 480px) {
+		.me {
+			img {
+				height: 15rem;
+				width: 15rem;
+			}
+		}
+}

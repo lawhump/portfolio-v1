@@ -1,0 +1,25 @@
+.me .links {
+  margin: 3rem auto 0 auto;
+
+  a:not(:last-child) {
+    margin-right: .8rem;
+  }
+
+  i {
+    color: #455a64;
+  }
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+  .me .links {
+    a {
+      font-size: 115%;
+    }
+
+    a:not(:last-child) {
+      margin-right: 1.8rem;
+    }
+  }
+}

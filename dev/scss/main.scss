@@ -1,0 +1,27 @@
+@import 'normalize';
+@import 'partials/vars';
+@import 'partials/mixins';
+@import 'partials/base';
+@import 'partials/me';
+@import 'partials/project';
+@import 'partials/buttons';
+@import 'partials/links';
+@import 'partials/projectpage';
+
+.home > section {
+	float: left;
+	height: 100vh;
+}
+
+@media all and (max-width: 767px) {
+	.home {
+		overflow: auto;
+	}
+
+	.home > section {
+		display: block;
+		float: none;
+		height: auto;
+		width: 100%;
+	}
+}
